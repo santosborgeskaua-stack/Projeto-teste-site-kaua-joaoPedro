@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Atendimento | Personalização de Motos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Personalização de Motos</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Rate.html">Avaliações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="form-avaliacao">
+            <h2>Avalie Nosso Atendimento</h2>
+            <form action="#" method="post" class="form-avaliacao">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+                <label for="nota">Nota do Atendimento:</label>
+                <select id="nota" name="nota" required>
+                    <option value="">Selecione...</option>
+                    <option value="5">5 - Excelente</option>
+                    <option value="4">4 - Bom</option>
+                    <option value="3">3 - Regular</option>
+                    <option value="2">2 - Ruim</option>
+                    <option value="1">1 - Péssimo</option>
+                </select>
+
+                <label for="mensagem">Comentário:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte-nos sobre sua experiência..." required></textarea>
+
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Contato Rápido</h3>
+        <p>Email: kaua.borges@gmail.com</p>
+        <p>Telefone: (44) 12345-6789</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Kauã e João Pedro. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

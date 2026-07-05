@@ -1,0 +1,188 @@
+/* Configurações Gerais de Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo Geral da Página */
+body {
+    background-color: #1a1a1a; /* Preto/Cinza bem escuro para destacar o Laranja */
+    color: #ffffff; /* Texto branco */
+    line-height: 1.6;
+}
+
+/* Cabeçalho com Alinhamento Inline-Block */
+header {
+    background-color: #FF6600; /* Laranja Vibrante */
+    padding: 20px;
+    text-align: center; /* Centraliza o bloco do cabeçalho */
+    border-bottom: 4px solid #b34700; /* Linha inferior laranja escura */
+}
+
+/* Transformando o Título e a Navegação em blocos na mesma linha */
+header .logo {
+    display: inline-block;
+    color: #111111; /* Letras escuras para contraste no fundo laranja */
+    font-size: 24px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-right: 40px; /* Espaço entre o título e as opções */
+}
+
+header .menu {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .menu ul {
+    list-style: none;
+}
+
+/* Itens do Menu também em inline-block */
+header .menu ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header .menu ul li a {
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ffffff; /* Botões brancos para contraste */
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+header .menu ul li a:hover {
+    background-color: #111111;
+    color: #FF6600; /* Inverte as cores ao passar o mouse */
+}
+
+/* Área de Conteúdo */
+main {
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+    background-color: #262626; /* Fundo cinza para as seções */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #FF6600; /* Borda laranja nas seções */
+}
+
+h2 {
+    color: #FF6600; /* Títulos das seções em Laranja */
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Alinhando as 3 Fotos Lado a Lado usando Inline-Block */
+.container-fotos {
+    text-align: center; /* Centraliza as fotos na seção */
+}
+
+.foto-moto {
+    display: inline-block;
+    margin: 10px 15px; /* Controla o espaçamento entre elas */
+    vertical-align: top;
+}
+
+.foto-moto img {
+    border: 3px solid #FF6600;
+    border-radius: 6px;
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Centralização de Mídias (Vídeo e Mapa) */
+.container-video, .container-mapa {
+    text-align: center;
+}
+
+iframe {
+    border: 3px solid #FF6600;
+    max-width: 100%;
+}
+
+/* Barra Lateral (Aside) */
+aside {
+    background-color: #111111;
+    border-top: 3px solid #FF6600;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+aside h3 {
+    color: #FF6600;
+    margin-bottom: 10px;
+}
+
+/* Formulário de Avaliação */
+.form-avaliacao {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-avaliacao label {
+    color: #FF6600;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.form-avaliacao input,
+.form-avaliacao select,
+.form-avaliacao textarea {
+    padding: 10px;
+    border: 2px solid #FF6600;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-avaliacao input:focus,
+.form-avaliacao select:focus,
+.form-avaliacao textarea:focus {
+    outline: none;
+    border-color: #ff944d;
+    background-color: #262626;
+}
+
+.form-avaliacao button {
+    background-color: #FF6600;
+    color: #111111;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.form-avaliacao button:hover {
+    background-color: #b34700;
+    color: #ffffff;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0a0a0a;
+    color: #777777;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
